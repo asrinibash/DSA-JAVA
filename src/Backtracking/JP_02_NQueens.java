@@ -75,9 +75,9 @@ package Backtracking;
 
 public class JP_02_NQueens {
     public static void main(String[] args) {
-        int n=5;
-      boolean[][] board=new boolean[n][n];
-        System.out.println(queens(board,0));
+        int n = 4;
+        boolean[][] board = new boolean[n][n];
+        System.out.println(queens(board, 0));
     }
 
     static int queens(boolean[][] board, int row) {
@@ -87,8 +87,10 @@ public class JP_02_NQueens {
             return 1;
         }
         int count = 0;
+
         //Placing the Queen and checking every row and column
         for (int col = 0; col < board.length; col++) {
+
             //place the queen
             if (isSafe(board, row, col)) {
                 board[row][col] = true;
@@ -105,7 +107,7 @@ public class JP_02_NQueens {
             if (board[i][col]) {
                 return false;
             }
-         }
+        }
 
         //for diagonal left
         int maxLeft = Math.min(row, col);
@@ -124,7 +126,7 @@ public class JP_02_NQueens {
         }
 
         //if none of above statement is executed then we will assign as true
-          return true;
+        return true;
     }
 
     private static void display(boolean[][] board) {
