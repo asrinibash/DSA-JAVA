@@ -44,7 +44,7 @@ public class JP_02_NKnights {
             if (board[row - 2][col + 1]) return false;
         }
 
-        if (isValid(board, row-1, col+2)) {
+        if (isValid(board, row - 1, col + 2)) {
             return !board[row - 1][col + 2];
         }
         return true;
