@@ -78,4 +78,3 @@ public class JP_01_Problem {
         path[r][c]=0;
     }
 }
-
