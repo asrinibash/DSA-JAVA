@@ -1,7 +1,7 @@
 package Backtracking;
 
 
-public class JP_02_NKnights {
+public class JP_03_NKnights {
     public static void main(String[] args) {
         int n = 4;
         boolean[][] board = new boolean[n][n];
