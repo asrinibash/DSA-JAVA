@@ -1,4 +1,4 @@
-package DSA_Sheet_ApnaCollege;
+package DSA_Sheet_ApnaCollege.Array;
 
 
 import java.util.Arrays;
