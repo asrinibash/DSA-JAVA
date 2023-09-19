@@ -45,16 +45,42 @@ public class JP_03_MaximumSumSubArray {
         //using Kadane's Algo Optimal Solution
         //Here Loop will run once and if the sum is smaller than 0 we reassigned to sum 0,
         //so we can get max sum in traverse once in a group
+//        int sum=0;
+//        int max=Integer.MIN_VALUE;
+//        for(int i=0;i<nums.length;i++){
+//            sum+=nums[i];
+//            if(sum>max)
+//                max=sum;
+//            if(sum<0){
+//                sum=0;
+//            }
+//        }
+//        System.out.println(max);
+
+
         int sum=0;
         int max=Integer.MIN_VALUE;
+        int start=0,startIndex=-1,endIndex=-1;
         for(int i=0;i<nums.length;i++){
             sum+=nums[i];
-            if(sum>max)
-                max=sum;
             if(sum<0){
                 sum=0;
+                start=i;
             }
+            if(sum>max) {
+                max = sum;
+                startIndex=start;
+                endIndex=i;
+            }
+
         }
         System.out.println(max);
+        for (int i = startIndex; i <= endIndex; i++) {
+            System.out.print(nums[i]+" ");
+        }
+
+
+
     }
+
 }
