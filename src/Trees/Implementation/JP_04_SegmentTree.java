@@ -1,4 +1,4 @@
-package BinaryTrees;
+package Trees.Implementation;
 
 public class JP_04_SegmentTree {
    private class Node {
@@ -63,8 +63,6 @@ public class JP_04_SegmentTree {
             display(node.left);
         if (node.right != null)
             display(node.right);
-
-
     }
 
     public int additionRange(int start,int end){

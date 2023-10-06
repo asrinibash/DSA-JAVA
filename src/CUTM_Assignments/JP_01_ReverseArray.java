@@ -1,4 +1,4 @@
-package CUTM;
+package CUTM_Assignments;
 
 import java.util.Arrays;
 

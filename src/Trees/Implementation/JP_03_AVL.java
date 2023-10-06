@@ -1,4 +1,4 @@
-package BinaryTrees;
+package Trees.Implementation;
 
 public class JP_03_AVL {
     public class Node {

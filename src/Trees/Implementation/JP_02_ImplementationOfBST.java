@@ -1,4 +1,4 @@
-package BinaryTrees;
+package Trees.Implementation;
 
 public class JP_02_ImplementationOfBST {
     public class Node {
