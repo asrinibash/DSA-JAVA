@@ -33,30 +33,30 @@ public class JP_01_CycleDetection {
             if(rec[e.dest]){
                 return true;
             }
-           else if(!vis[curr]){
-               if(isCycleInDirectedGraph(graph,vis,rec,e.dest))
+           else if(!vis[e.dest] && isCycleInDirectedGraph(graph,vis,rec,e.dest)){
                     return true;
             }
         }
         rec[curr]=false;
         return false;
     }
-    public static void main(String[] args) {
-         int V=4;
-         ArrayList<Edge>[] graph=new ArrayList[V];
-          createGraph(graph);
-         boolean[] vis=new boolean[V];
-         boolean[] rec=new boolean[V];
 
-        for (int i = 0; i < V; i++) {
+    public static void main(String[] args) {
+        int V = 4;
+        ArrayList<Edge>[] graph = new ArrayList[V];
+        createGraph(graph);
+        boolean[] vis = new boolean[graph.length];
+        boolean[] rec = new boolean[vis.length];
+//        System.out.println(isCycleInDirectedGraph(graph,new boolean[V],new boolean[V],0));
+        for (int i = 0; i < graph.length; i++) {
             if(!vis[i]) {
-               boolean isCyc =isCycleInDirectedGraph(graph, vis, rec, 0);
+               boolean isCyc =isCycleInDirectedGraph(graph, vis, rec, i);
                if(isCyc){
-                    System.out.println(true);
+                   System.out.println(isCyc);
                     break;
                 }
-
             }
         }
+
      }
 }
