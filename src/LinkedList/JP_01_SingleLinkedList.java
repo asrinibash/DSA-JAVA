@@ -49,7 +49,7 @@ public class JP_01_SingleLinkedList {
 //        Node node=new Node(val,temp.next);
 //        temp.next=node;
         //same thing
-          temp.next= new Node(val,temp.next);
+//          temp.next new Node(val,temp.next);
           size++;
     }
 

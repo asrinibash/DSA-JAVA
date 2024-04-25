@@ -66,7 +66,7 @@ public class JP_06_ReverseLinkedList {
             prev=present;
             present=after;
             if(after!=null)
-             after=after.next;
+              after=after.next;
         }
         head=prev;
     }

@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class JP_01_PermutationOfABC {
     public static void main(String[] args) {
-        System.out.println(permutationCount("", "abc"));
+//        System.out.println(permutation("", "abc"));
+        permutation("", "abc");
     }
 
     static void permutation(String p, String up) {

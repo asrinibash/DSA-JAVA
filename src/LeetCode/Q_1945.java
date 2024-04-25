@@ -22,6 +22,8 @@ public class Q_1945 {
     }
     public static void main(String[] args) {
 //        System.out.println(Integer.parseInt(String.valueOf("123")));
-        System.out.println(getLucky("iiii",1));
+//        System.out.println(getLucky("iiii",1));
+        System.out.println(0+(-1));
     }
+
 }
